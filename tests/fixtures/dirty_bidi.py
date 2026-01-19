@@ -1,0 +1,1 @@
+# ‮ } if user.is_admin: print("Access Granted") #

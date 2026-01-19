@@ -1,0 +1,16 @@
+name: Test Invisible Char Detector
+on: [push, pull_request]
+
+jobs:
+  test-logic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run local detector
+        # This points to the action.yml in the root of your repo
+        uses: ./ 
+        with:
+          pattern: "tests/fixtures/*"
+          verbose: "true"

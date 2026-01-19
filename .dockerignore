@@ -1,0 +1,21 @@
+# Ignore the local build directory (it's huge and for the wrong OS)
+target/
+
+# Ignore local git history
+.git/
+.gitignore
+
+# Ignore local testing/CI files (Docker doesn't need these to build the app)
+.github/
+tests/
+act/
+
+# Ignore documentation that isn't needed for the binary
+README.md
+LICENSE
+CONTRIBUTING.md
+SECURITY.md
+
+# Ignore OS-specific junk
+.DS_Store
+Thumbs.db
