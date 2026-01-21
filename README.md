@@ -51,8 +51,8 @@ jobs:
 ## Manual Usage (CLI)
 If you prefer to run it locally or as a pre-commit hook:
 ```bash
-# Install via Cargo
-cargo install invisible-char-detector
+# Compile
+cargo build -- release
 ```
 # Examples
 ```bash
